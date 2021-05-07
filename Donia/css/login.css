@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0; 
+    font-family: 'Quicksand', sans-serif;
+   }
+body{
+    background: #fff;
+}
+.container{
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 100px;
+}
+.container h1{
+    margin-top: 10%;
+    width: 100%;  text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.container .row{
+    position: relative;
+    width: 100%;
+    clear: both;
+}
+.container .row .col{
+    position: relative;
+    width: 45%;
+    margin: 20px 0;
+}
+.container .row:last-of-type .col{
+    width: 100%;
+}
+.container .row .col:nth-of-type(2n+1){
+    float: left;
+}
+.container .row .col:nth-of-type(2n){
+    float: right;
+}
+.container .row .col::before{
+    content: attr(data);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+    color: #b5b5b5;
+    font-size: 20px;
+    transition: .9s;
+}
+.container .row:last-of-type .col::before{
+    top: 0;
+    transform: translateY(50%);
+}
+.container .row input,.container .row textarea{
+    width: 100%;
+    outline: none;   border: none;
+    padding: 10px 0px;
+    border-bottom: 2px solid #262626;
+    font-size: 20px;
+    background: transparent;
+}
+
+.container .row .col.focus::before{
+    transform: translateY(-150%);
+    color: #2196f3;
+    font-size: 15px;
+}
+.container .row:last-of-type .col.focus::before{
+    top: 0;
+    transform: translateY(-40%);
+    color: #2196f3;
+    font-size: 15px;
+}
+
+
+.container a{
+    position: relative;
+    text-decoration: none;
+    color: #fff;  background: #2196f3;
+    display: inline-block;
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+    margin: 15px 0;
+    font-size: 18px;
+}
+.container a:hover{
+    background: #3f51b5;
+}

@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+}
+.websiteabout div{
+    text-align: center;
+}
+.container .x1{
+    display:flex;
+
+    width: 1300px;
+}
+.container .x2{
+    display:flex;
+
+    width: 1500px;
+}
