@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/signin.css" rel="stylesheet">
+    <title>SIGN IN to Alisharaf</title>
+</head>
+<body>
+    <!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> 
+
+
+<div class="Signup_Form">
+<form action="" method="POST" id="login" class="animate">
+<i title="REMEMBER" onclick="savedetails()" class="fa fa-save"></i>
+<center>
+<h1>SIGN IN</h1>
+<input type="email" id="email" name="email" placeholder="Email Address*" required/>
+<input type="password" id="passcode" name="passcode" placeholder="Password*" required/>
+<button class="btn1" type="submit">SignIn</button>
+<section>
+<span><a href="#">Forgot Password?</a></span>
+<span><a   href="signup.html" target="_blank">Don't have an account?</a></span>
+</section>
+</center>
+</form>
+
+<form action="" method="POST" id="signup" class="animate" hidden>
+<center>
+<h1>SIGN UP</h1>
+<input type="text" id="username" name="username" placeholder="Full name*" required/>
+<input type="tel" id="mob" name="mob" placeholder="Contact no*" required/>
+<input type="email" id="emailaddress" name="emailaddress" placeholder="Email Address*" required/>
+<input type="text" id="password" name="password" placeholder="Password*" required/>
+<input type="password" id="Cpassword" name="Cpassword" placeholder="Confirm Password*" onkeypress="Validate()" required/>
+<input type="button" value="SignUp" class="btn1" onclick="ValidateSubmission()">
+<section>
+<span><a onclick="Loginform()">Already Registered?</a></span>
+</section>
+</center>
+</form>
+</div>
+<div id="popup"></div>
+
+
+
+<div class="credits"><h1>Create By Ali Sharaf</h1></div>
+
+
+</body>
+</html>
